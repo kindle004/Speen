@@ -1,4 +1,4 @@
 # Speen
-Code for inserting any obj file to SPINNNNNN
+Code for making camera SPINNNNNN
 
-Attach this script to the MainCamera of any Unity 3D project
+Attach this script to the MainCamera of any Unity 3D project and the camera will rotate around the center of your scene
