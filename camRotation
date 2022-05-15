@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class camRotation : MonoBehaviour
+{
+    public float rotationSpeed = 10; //you can change this in the camera inspector module for this code
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 rotation = transform.eulerAngles;
+
+        //rotation.y += //Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime; // Standard Left-/Right Arrows and A & D Keys
+        rotation.y += rotationSpeed * Time.deltaTime; // No input rotate automatically
+
+        transform.eulerAngles = rotation;
+    }
+}
